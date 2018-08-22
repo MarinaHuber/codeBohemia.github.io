@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 /*
 	Read Only by HTML5 UP
@@ -16,9 +16,9 @@
 
 	body, input, select, textarea {
 		color: #888;
-		font-family: "Lato", sans-serif;
+		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 16pt;
-		font-weight: 400;
+		font-weight: 400 !important;
 		line-height: 1.75em;
 	}
 
@@ -114,8 +114,8 @@
 	blockquote {
 		border-left: solid 8px #e4e4e4;
 		font-style: italic;
-		margin: 0 0 2.25em 0;
-		padding: 0.5em 0 0.5em 2em;
+		margin: 0 0 2.0em 0;
+		padding: 0.5em 0 0.5em 1em;
 	}
 
 	code {
