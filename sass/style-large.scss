@@ -2,32 +2,63 @@
 @import 'mixins';
 
 /*
-	Read Only by HTML5 UP
+	Photon by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header: 20em;
-
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 11pt;
+		font-size: 13pt;
 	}
-	
+
+	h1, h2, h3, h4, h5, h6 {
+		br {
+			display: none;
+		}
+	}
+
+/* List */
+
+	ul {
+		&.major-icons {
+			li {
+				padding: 2em;
+
+				.icon {
+					height: 8em;
+					line-height: 8em;
+					width: 8em;
+				}
+			}
+		}
+	}
+
+/* Main */
+
+	.main {
+		@include padding(4em, 0);
+
+		&.style2 {
+			background-attachment: scroll;
+		}
+	}
+
 /* Header */
 
 	#header {
-		width: $size-header;
-	}
-	
-/* Wrapper */
+		@include padding(5em, 0, (0,0,$size-element-margin,0));
+		background-attachment: scroll;
 
-	#wrapper {
-		@if $side-header == 'right' {
-			padding-right: $size-header;
+		br {
+			display: inline;
 		}
-		@else {
-			padding-left: $size-header;
-		}
+	}
+
+/* Footer */
+
+	#footer {
+		@include padding(4em, 0, (0,0,$size-element-margin,0));
+		background-attachment: scroll;
 	}

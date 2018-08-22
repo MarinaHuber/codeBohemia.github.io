@@ -2,7 +2,7 @@
 @import 'mixins';
 
 /*
-	Read Only by HTML5 UP
+	Photon by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -13,145 +13,79 @@
 		font-size: 12pt;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		br {
-			display: none;
-		}
-	}
-
-	h2 {
+	h1 {
 		font-size: 1.75em;
 	}
 
-	h3 {
+	h2 {
 		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.1em;
 	}
 
 	h4 {
 		font-size: 1em;
 	}
 
-/* Image */
+/* List */
 
-	.image {
-		&.left {
-			margin: 0 1.5em 1em 0;
-		}
-				
-		&.right {
-			margin: 0 0 1em 1.5em;
-		}
-	}
+	ul {
+		&.major-icons {
+			li {
+				padding: 1.5em;
 
-/* Section/Article */
+				.icon {
+					height: 5em;
+					line-height: 5em;
+					width: 5em;
 
-	header {
-		br {
-			display: none;
-		}
-
-		&.major {
-			h2 {
-				font-size: 2.5em;
-
-				& + p {
-					font-size: 1.5em;
+					&:before {
+						font-size: 42px;
+					}
 				}
 			}
 		}
 	}
 
-/* Features */
+/* Icon */
 
-	.features {
-		article {
-			.image {
-				display: block;
-				margin: 0 0 $size-element-margin 0;
-				padding-right: 0;
-				width: 100%;
-			}
-			
-			.inner {
-				display: block;
-				width: 100%;
-			}
+	.icon {
+		&.major {
+			margin: 0 0 ($size-element-margin * 0.5) 0;
 		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		height: 3em;
+		line-height: 3em;
+	}
+
+/* Main */
+
+	.main {
+		@include padding(3em, 1.5em);
 	}
 
 /* Header */
 
 	#header {
-		> header {
-			padding: 2em;
-			
-			.avatar {
-				margin: 0 auto ($size-element-margin * 0.75) auto;
-				width: 6em;
-			}
+		@include padding(4em, 3em, (0,0,$size-element-margin,0));
 
-			h1 {
-				font-size: 1.5em;
-			}
-			
-			p {
-				margin: 1em 0 0 0;
-			}
-		}
-
-		> footer {
-			padding: 1.5em;
-		}
-	}
-	
-/* Main */
-
-	#main {		
-		> section {
-			> .container {
-				padding: 2em 0 0 0;
-			}
+		.actions {
+			margin: $size-element-margin 0 0 0;
 		}
 	}
 
-/* One */
-
-	#one {
-		&:before {
-			height: 7em;
-		}
-	}
-	
 /* Footer */
 
 	#footer {
-		text-align: center;
-		
-		.copyright {
-			li {
-				border-left: 0;
-				display: block;
-				line-height: 1.75em;
-				margin: 0.75em 0 0 0;
-				padding-left: 0;
-				
-				&:first-child {
-					margin-top: 0;
-				}
-			}
-		}
-	}
-	
-/* Layers */
-
-	#titleBar {
-		.toggle {
-			height: 4em;
-			width: 6em;
-
-			&:before {
-				font-size: 14px;
-				width: 44px;
-			}
-		}
+		@include padding(3em, 1.5em, (0,0,$size-element-margin,0));
 	}
