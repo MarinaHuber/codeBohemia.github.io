@@ -1,167 +1,61 @@
 /*
-	Tessellate by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/*********************************************************************************/
-/* Basic                                                                         */
-/*********************************************************************************/
+/* Basic */
 
+	code,
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea,
+	.box,
 	.image,
 	.image img,
-	.button	
-	{
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
 		position: relative;
-		-ms-behavior: url('css/ie/PIE.htc');
+		-ms-behavior: url("css/ie/PIE.htc");
 	}
 
-	/* Section/Article */
+/* Form */
 
-		section,
-		article
-		{
-		}
-		
-			section > .last-child,
-			article > .last-child
-			{
-				margin-bottom: 0;
-			}
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		line-height: 2.75em;
+	}
 
-			section.last-child,
-			article.last-child
-			{
-				margin-bottom: 0;
-			}
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: normal;
+		-webkit-appearance: normal;
+		-o-appearance: normal;
+		-ms-appearance: normal;
+		appearance: normal;
+	}
 
-	/* List */
-
-		ul.icons
-		{
-		}	
-		
-			ul.icons li
-			{
-			}
-			
-				ul.icons a
-				{
-					position: relative;
-					-ms-behavior: url('css/ie/PIE.htc');
-					border: solid 1px #ddd;
-				}
-
-	/* Form */
-
-		form
-		{
-		}
-		
-			form input.text,
-			form select,
-			form .select,
-			form textarea
-			{
-				position: relative;
-				-ms-behavior: url('css/ie/PIE.htc');
-				border: solid 1px #ddd;
-				line-height: 1.25em;
-			}
-
-			form select
-			{
-				position: relative;
-			}
-			
-				form select option
-				{
-					color: #000;
-				}
-				
-			form .select
-			{
-			}
-
-				form .select select
-				{
-					width: 100%;
-				}
-
-				form .select:before
-				{
-					display: none;
-				}
-				
-	/* Button */
-		
-		.button.alt
-		{
-			border: solid 1px #ddd;
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			padding: 0 0 0 1.5em;
 		}
 
-	/* Feature Icon */
-
-		.feature-icon
-		{
-			padding-bottom: 0;
-		}
-		
-			.feature-icon:before,
-			.feature-icon:after
-			{
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
 				display: none;
 			}
 
-			.feature-icon .icon
-			{
-				position: relative;
-				-ms-behavior: url('css/ie/PIE.htc');
-				background: #fff;
-			}
+/* Button */
 
-				.feature-icon .icon:before
-				{
-					font-size: 6em;
-					color: #3d3d3d;
-				}
-	
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header
-	{
-		background-image:			url('../../images/header.jpg');
-		background-size:			cover;
-		background-position:		auto;
-		background-repeat:			no-repeat;
-		-ms-behavior: url('css/ie/backgroundsize.min.htc');
+	input[type="submit"].alt,
+	input[type="reset"].alt,
+	input[type="button"].alt,
+	.button.alt {
+		border: solid 2px #e4e4e4;
 	}
-
-/*********************************************************************************/
-/* Main Sections                                                                 */
-/*********************************************************************************/
-
-	.main
-	{
-	}
-
-		.main > .content
-		{
-		}
-
-		.main > .content.style1
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#412e4c, endColorstr=#a56365);
-		}
-
-		.main > .content.style2
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#85505f, endColorstr=#384955);
-		}
-
-		.main > .content.style3
-		{
-			filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#2f394e, endColorstr=#5f796b);
-		}
