@@ -1,51 +1,21 @@
-// Duration.
-	$duration-transition:		0.2s;
+$color-bg:					#ffffff;
+$color-fg:					#6e6e6e;
+$color-fg-light:			#888888;
+$color-fg-bold:				#5b5b5b;
 
-// Side.
-	// Change this to 'left' to move the header sidebar to the left-hand side
-	// of the viewport. Note that if you do this, be sure to also change
-	// sidePanel's 'side' in js/init.js.
-	$side-header:				'right';
+$color-accent-bg:			#4eb980;
+$color-accent-fg:			rgba(255,255,255,0.8);
+$color-accent-fg-light:		rgba(255,255,255,0.5);
+$color-accent-fg-bold:		#ffffff;
 
-// Size.
-	$size-border-radius:		5px;
-	$size-border-width:			2px;
-	$size-element-height:		2.75em;
-	$size-element-margin:		2.25em;
+$color-accent2-bg:			#544d55;
+$color-accent2-fg:			rgba(255,255,255,0.8);
+$color-accent2-fg-light:	rgba(255,255,255,0.35);
+$color-accent2-fg-bold:		#ffffff;
 
-// Font.
-	$font-family:				'Lato', sans-serif;
-	$font-family-fixed:			'Source Code Pro', monospace;
-	$font-weight:				400;
-	$font-weight-bold:			700;
+$color-border-ie:			#cccccc;
+$color-border:				rgba(224,224,224,0.75);
+$color-border-bg:			rgba(224,224,224,0.15);
+$color-border-bg2:			rgba(224,224,224,0.35);
 
-// Color.
-	$color-bg:					#fff;
-	$color-fg:					#888;
-	$color-fg-bold:				#777;	
-	$color-fg-light:			#aaa;
-
-	$color-accent-bg:			#4acaa8;
-	$color-accent-fg-bold:		#ffffff;
-	$color-accent-fg:			mix($color-accent-bg, $color-accent-fg-bold, 25%);
-	$color-accent-fg-light:		mix($color-accent-bg, $color-accent-fg-bold, 40%);
-
-	$color-accent2-bg:			#989898;
-	$color-accent2-fg-bold:		#ffffff;
-	$color-accent2-fg:			mix($color-accent2-bg, $color-accent2-fg-bold, 25%);
-	$color-accent2-fg-light:	mix($color-accent2-bg, $color-accent2-fg-bold, 40%);
-
-	$color-border:				#f4f4f4;
-	$color-border-bg:			#fafafa;
-
-	$color-border2:				#e4e4e4;
-	$color-border2-bg:			#f4f4f4;
-	
-	$color-border3:				#e0e0e0;
-	$color-border3-bg:			#eaeaea;
-	
-	$color-header-bg:			$color-accent-bg;
-	$color-header-fg-bold:		$color-accent-fg-bold;
-	$color-header-fg:			mix($color-header-bg, $color-header-fg-bold, 25%);
-	$color-header-fg-light:		mix($color-header-bg, $color-header-fg-bold, 40%);
-	$color-header-border:		mix($color-header-bg, $color-header-fg-bold, 90%);
+$size-radius:				4px;
