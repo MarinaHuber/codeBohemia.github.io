@@ -1,21 +1,41 @@
-$color-bg:					#ffffff;
-$color-fg:					#6e6e6e;
-$color-fg-light:			#888888;
-$color-fg-bold:				#5b5b5b;
+// Duration.
+	$duration-transition:		0.2s;
 
-$color-accent-bg:			#4eb980;
-$color-accent-fg:			rgba(255,255,255,0.8);
-$color-accent-fg-light:		rgba(255,255,255,0.5);
-$color-accent-fg-bold:		#ffffff;
+// Size.
+	$size-border-radius:		0.35em;
+	$size-element-height:		2.75em;
+	$size-element-margin:		2em;
 
-$color-accent2-bg:			#544d55;
-$color-accent2-fg:			rgba(255,255,255,0.8);
-$color-accent2-fg-light:	rgba(255,255,255,0.35);
-$color-accent2-fg-bold:		#ffffff;
+// Font.
+	$font-family:				'Source Sans Pro', Helvetica, sans-serif;
+	$font-family-fixed:			'Courier New', monospace;
+	$font-weight:				400;
+	$font-weight-bold:			400;
 
-$color-border-ie:			#cccccc;
-$color-border:				rgba(224,224,224,0.75);
-$color-border-bg:			rgba(224,224,224,0.15);
-$color-border-bg2:			rgba(224,224,224,0.35);
+// Color.
+	$color-bg:					#fff;
+	$color-fg:					#a2a2a2;
+	$color-fg-bold:				#787878;
+	$color-fg-light:			#b2b2b2;
+	$color-border:				#efefef;
+	$color-border-bg:			#f7f7f7;
+	$color-border2:				#dfdfdf;
+	$color-border2-bg:			#e7e7e7;
 
-$size-radius:				4px;
+	$color-accent-bg:			#49bf9d;
+	$color-accent-fg:			mix($color-accent-bg, #ffffff, 25%);
+	$color-accent-fg-bold:		#ffffff;
+	$color-accent-fg-light:		mix($color-accent-bg, #ffffff, 40%);
+	$color-accent-border:		rgba(255,255,255,0.25);
+	$color-accent-border-bg:	rgba(255,255,255,0.075);
+	$color-accent-border2:		rgba(255,255,255,0.5);
+	$color-accent-border2-bg:	rgba(255,255,255,0.2);
+	
+	$color-accent2-bg:			#1f1815;
+	$color-accent2-fg:			rgba(255,255,255,0.5);
+	$color-accent2-fg-bold:		#ffffff;
+	$color-accent2-fg-light:	rgba(255,255,255,0.4);
+	$color-accent2-border:		rgba(255,255,255,0.25);
+	$color-accent2-border-bg:	rgba(255,255,255,0.075);
+	$color-accent2-border2:		rgba(255,255,255,0.5);
+	$color-accent2-border2-bg:	rgba(255,255,255,0.2);
