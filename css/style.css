@@ -35,7 +35,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #66b3ff !important;
+			color: #06B0D4 !important;
 		}
 
 	strong, b {
@@ -187,7 +187,7 @@
 	}
 
 	header.major h2 {
-		color: #66b3ff;
+		color: #06B0D4;
 		font-size: 3.5em;
 	}
 
@@ -251,7 +251,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #66b3ff;
+			border-color: #06B0D4;
 		}
 
 	.select-wrapper {
@@ -843,7 +843,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #66b3ff;
+			background-color: #06B0D4;
 			color: #ffffff !important;
 		}
 
@@ -913,8 +913,8 @@
 /* Header */
 
 	#header {
-		background: #66b3ff;
-		color: ##cce6ff;
+		background: #06B0D4;
+		color: #cce6ff;
 		height: 100%;
 		position: fixed;
 		text-align: center;
@@ -977,7 +977,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #b6e9dc;
+					color: #fff;
 				}
 
 		#header > nav ul {
@@ -1007,7 +1007,7 @@
 
 					#header > nav ul li a.active {
 						background: #fff;
-						color: #66b3ff !important;
+						color: #06B0D4 !important;
 					}
 
 				#header > nav ul li:first-child {
