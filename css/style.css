@@ -555,6 +555,7 @@
 
 				ul.feature-icons li:before {
 					border-radius: 100%;
+					background: #06B0D4;
 					color: #ffffff;
 					display: block;
 					height: 2.5em;
