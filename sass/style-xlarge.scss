@@ -32,7 +32,7 @@ $size-header: 20em;
 /* Wrapper */
 
 	#wrapper {
-		@if $side-header == 'right' {
+		@if $side-header == 'left' {
 			padding-right: $size-header;
 		}
 		@else {
