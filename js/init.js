@@ -29,7 +29,7 @@
 					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
 				},
 				sidePanel: {
-				/	*breakpoints: 'medium', */
+				 breakpoints: 'large',
 					hidden: true,
 					width: { small: 275, medium: '20em' },
 					height: '100%',
