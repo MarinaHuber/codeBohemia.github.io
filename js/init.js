@@ -21,7 +21,7 @@
 					mode: 'transform'
 				},
 				titleBar: {
-					breakpoints: 'medium',
+					breakpoints: 'large',
 					width: '100%',
 					height: 44,
 					position: 'top-left',
@@ -31,7 +31,7 @@
 				sidePanel: {
 				 breakpoints: 'large',
 					hidden: true,
-					width: { small: 275, medium: '20em' },
+					width: { small: 275, medium: '20em', large: '30em' },
 					height: '100%',
 					animation: 'pushX',
 					position: 'top-right',
