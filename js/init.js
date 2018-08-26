@@ -21,7 +21,7 @@
 					mode: 'transform'
 				},
 				titleBar: {
-					breakpoints: 'large',
+					breakpoints: 'medium',
 					width: '100%',
 					height: 44,
 					position: 'top-left',
@@ -29,12 +29,12 @@
 					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
 				},
 				sidePanel: {
-				 breakpoints: 'large',
+				 breakpoints: 'medium',
 					hidden: true,
-					width: { small: 275, medium: '20em', large: '30em' },
+					width: { small: 275, medium: '20em' },
 					height: '100%',
 					animation: 'pushX',
-					position: 'top-right',
+					position: 'top-left',
 					side: 'left',
 					orientation: 'vertical',
 					clickToHide: true,
