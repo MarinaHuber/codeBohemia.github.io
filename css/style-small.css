@@ -100,8 +100,14 @@
 	}
 
 	#mount-haiku-logo {
-		width: 40px;
 		height: 20px;
+		background: #06B0D4;
+		height: 100%;
+		position: fixed;
+		text-align: center;
+		top: 0;
+		width: 7em;
+		right: 0;
 	}
 
 /* Footer */
