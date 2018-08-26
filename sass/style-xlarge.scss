@@ -7,14 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header: 21em;
+$size-header: 5em;
 
 /* Basic */
 
 	body, input, select, textarea {
 		font-size: 13pt;
 	}
-	
+
 /* Header */
 
 	#header {
@@ -28,7 +28,7 @@ $size-header: 21em;
 			padding: 1.5em;
 		}
 	}
-	
+
 /* Wrapper */
 
 	#wrapper {
@@ -39,10 +39,10 @@ $size-header: 21em;
 			padding-left: $size-header;
 		}
 	}
-	
+
 /* Main */
 
-	#main {		
+	#main {
 		> section {
 			> .container {
 				padding: 4em 0 2em 0;
