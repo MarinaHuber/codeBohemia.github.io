@@ -24,7 +24,7 @@
 					breakpoints: 'medium',
 					width: '100%',
 					height: 44,
-					position: 'top-left',
+					position: 'top-right',
 					side: 'top',
 					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span><span class="title" data-action="copyText" data-args="logo"></span>'
 				},
@@ -34,7 +34,7 @@
 					width: { small: 275, medium: '20em' },
 					height: '100%',
 					animation: 'pushX',
-					position: 'top-right',
+					position: 'top-left',
 					side: 'left',
 					orientation: 'vertical',
 					clickToHide: true,
