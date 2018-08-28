@@ -11,7 +11,8 @@
 /* Basic */
 
 	body {
-		background: #fff;
+	 background: #fff;
+
 	}
 
 	body, input, select, textarea {
@@ -915,9 +916,12 @@
 /* Header */
 
 	#header {
-		background: #06B0D4;
-		color: #cce6ff;
+		background: linear-gradient(to bottom, rgba(0, 110, 130, 1) 0%, rgba(0, 110, 130, 0) 100%);
 		height: 100%;
+		margin: 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		color: #cce6ff;
 		position: fixed;
 		text-align: center;
 		top: 0;
@@ -979,7 +983,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #fff;
+					color: #003343;
 				}
 
 		#header > nav ul {
@@ -1020,7 +1024,7 @@
 
 	#wrapper {
 		background: #fff;
-		padding-right: 23em;
+
 	}
 
 /* Main */

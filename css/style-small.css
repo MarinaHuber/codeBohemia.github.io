@@ -102,18 +102,9 @@
 /* One */
 
 	#one:before {
-		height: 0.1em;
+	/*	height: 0.1em; */
 	}
 
-	#mount-haiku-logo {
-		background: #ff6802;
-		height: 30%;
-		position: fixed;
-		text-align: center;
-		top: 0;
-		width: 100%;
-		right: 0;
-	}
 
 /* Footer */
 
