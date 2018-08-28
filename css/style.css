@@ -1024,6 +1024,7 @@
 
 	#wrapper {
 		background: #fff;
+		padding: 0em 0 0em 0;
 
 	}
 
@@ -1043,6 +1044,9 @@
 		}
 
 /* One */
+#one {
+
+}
 
 #mount {
 	 padding: 0em 0em 0em 30em;
