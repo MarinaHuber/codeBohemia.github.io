@@ -6,6 +6,13 @@
 
 /* Basic */
 
+
+#mount {
+	 padding: 0em 0em 0em 4em;
+ /*	display: block; */
+
+}
+
 	html, body {
 		min-width: 320px;
 	}

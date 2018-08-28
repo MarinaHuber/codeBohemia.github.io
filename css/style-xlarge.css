@@ -29,6 +29,11 @@
 	#wrapper {
 		padding-right: 21em;
 	}
+	#mount {
+		 padding: 0em 0em 0em 35em;
+	 /*	display: block; */
+
+	}
 
 /* Main */
 

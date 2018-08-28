@@ -6,6 +6,12 @@
 
 /* Basic */
 
+#mount {
+	 padding: 0em 0em 0em 25em;
+ /*	display: block; */
+
+}
+
 	body, input, select, textarea {
 		font-size: 12pt;
 	}

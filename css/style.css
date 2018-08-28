@@ -1041,13 +1041,8 @@
 /* One */
 
 #mount {
-	padding: 0em 0 10em 12em;
-	background-position: top right;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: block;
-	height: 6em;
-	width: 100%;
+	 padding: 0em 0em 0em 30em;
+ /*	display: block; */
 
 }
 
