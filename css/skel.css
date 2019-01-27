@@ -9,7 +9,12 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+	
+	#mount {
+		 padding: 0em 0em 0em 2em;
+	 /*	display: block; */
 
+	}
 /* Container */
 
 	.container {
