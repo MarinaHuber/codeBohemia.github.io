@@ -9,9 +9,11 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
 	#mount {
-		 padding: 0em 0em 0em 2em;
+		 padding: 0em 0em 0em 50em;
+		 order-top: solid 12px #f4f4f4;
+	     background: linear-gradient(to bottom, rgba(0, 110, 130, 1) 0%, rgba(0, 110, 130, 0) 100%);
 	 /*	display: block; */
 
 	}
