@@ -93,14 +93,14 @@
 						<section id="two">
 							<div class="container">
 								<h3>Things I Do</h3>
-							<p>Currently based in Croatia, started learning programming as a student at Harvard Uni @Dynamic Web Application semester class from 2014.</p>
+							<p>Currently based in Croatia, started learning programming as a summer student at Harvard Uni @Dynamic Web Application semester classes. here are few thing I strive to do more and better.</p>
 								<ul class="feature-icons">
 									<li class="fa-code">Write the code</li>
 									<li class="fa-book">Read Apple Design GL</li>
 									<li class="fa-coffee">Drink coffee and blog</li>
-									<li class="fa-bolt">Hackathons</li>
 									<li class="fa-users">Beginner Unity C#</li>
-									<li class="fa-cubes">OSS rookie</li>
+									<li class="fa-cubes">OSS rewriting and contribution</li>
+									<li class="fa-bolt">Hackathons</li>
 								</ul>
 							</div>
 						</section>
@@ -166,7 +166,7 @@
 												<ul>
 													<li>Swift Programming Guide <a href ="https://docs.swift.org/swift-book/index.html" target="_blank"><em>A classic for coding</em></a></li>
 													<li>The pragmatic programmer<a href ="https://docs.swift.org/swift-book/index.html" target="_blank"></a></li>
-													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Wabi sabi<a href ="https://spin.atomicobject.com/2016/12/17/software-is-imperfect/"target="_blank"></li>
 												</ul>
 									</header>
 									<header>
@@ -194,8 +194,9 @@
 										<div class="row">
 											<div class="12u">
 												<ul>
-													<li>Time in space <a href ="https://medium.com/@huber.marina" target="_blank">for coding</a></li>
+													<li>The power of starting something stupid<a href ="https://www.amazon.com/Power-Starting-Something-Stupid-without-ebook/dp/B00AR2P4FC" target="_blank">Richie Norton</a></li>
 													<li>A Few Principles for Thinking Clearly - <a href ="https://medium.com/the-polymath-project/a-few-principles-for-thinking-clearly-d18a74a2ebe9" target="_blank"><em>blog project</em></a></li>
+													<li>Letting go<a href ="https://www.amazon.com/Letting-Surrender-David-Hawkins-PhD/dp/193388598X" target="_blank">David Hawkins</a></li>
 												</ul>
 									</header>
 									<header>
@@ -220,13 +221,11 @@
 									</header>
 									<hr />
 
-									<h5>My favorite piece of code</h5>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
+									<h5>My favorite piece of code: Determine if an array contains a condition matching element.</h5>
+									<pre><code>i = let fruits = ["Banana", "Apple", "Kiwi"]
+let containsBanana = fruits.contains(where: { (fruit) in
+    return fruit == "Banana"
+}) // Returns true
 }
 
 print("It took " + i + ' iterations to sort the deck.")
