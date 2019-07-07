@@ -223,16 +223,17 @@
 									<hr />
 
 									<h5>My favorite piece of Swift code: -determine if an swiftUI promitive contains a condition matching element.</h5>
-									<pre><code>    var body: some View {
-       							 List {
-           							 FilterView(showFavorited: $showFavorited)
+									<pre><code>    
+    var body: some View {
+        List {
+            FilterView(showFavorited: $showFavorited)
 
-           								 ForEach(products) { product in
-              							  if !self.showFavorited || product.isFavorited {
-                   								 Text(product.title)
-              						  }
-           					 }
-       				 }
+            ForEach(products) { product in
+                if !self.showFavorited || product.isFavorited {
+                    Text(product.title)
+                }
+            }
+        }
 
 					</code></pre>
 					</div>
