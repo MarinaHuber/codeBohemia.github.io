@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Code Bohemia</title>
+		<title>Code Bohemia by Marina</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -48,7 +48,7 @@
 					<header>
 						<span class="image avatar"><img src="images/profile.png" alt="" /></span>
 						<h1 id="logo"><a href="#">Marina Huber</a></h1>
-						<p>iOS Engineer</p>
+						<p>Coder in realm of Apple</p>
 					</header>
 					<nav id="nav">
 						<ul>
@@ -65,7 +65,7 @@
 							<li><a href="https://twitter.com/SerinnahHuber?ref_src=twsrc%5Etfw" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 							<li><a href="https://medium.com/@huber.marina" class="fa fa-medium" aria-hidden="true" target="_blank"><span class="label"></span></a></li>
 							<li><a href="https://github.com/MarinaHuber" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/marinahuber" class="icon fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://stackoverflow.com/users/4406341/marina" class="icon fa-stackoverflow" target="_blank"><span class="label">Linkedin</span></a></li>
 						</ul>
 					</footer>
 				</section>
@@ -83,7 +83,7 @@
 
 								<header class="major">
 									<h2>Hi all!</h2>
-									<p>Wabi Sabi is japanese for accepting and being mindful that software products, like the natural world around us, are never perfect, permanent, or finished. It has given me some small sense of peace and helped me focus on how to make this situation better...I am here to learn Swift and share my last projects and prototypes. ♾  <img src="https://img.shields.io/badge/download-now-blue.svg" height="23" alt="" /> <a href="images/cv_iOS_progrMarina.pdf" target="_blank" download>  cv ↧ </a><br />
+									<p>Wabi Sabi is japanese for accepting and being mindful that software products, like the natural world around us, are never perfect, permanent, or finished. It has given me some small sense of peace and helped me focus on how to make this situation better...I am here to learn Swift and share my last knowledge and ideas. ♾  <img src="https://img.shields.io/badge/download-now-blue.svg" height="23" alt="" /> <a href="images/cv_iOS_progrMarina.pdf" target="_blank" download>  cv ↧ </a><br />
 									</p>
 								</header>
 							</div>
@@ -93,14 +93,14 @@
 						<section id="two">
 							<div class="container">
 								<h3>Things I Do</h3>
-							<p>Currently based in Croatia, started learning programming as a summer student at Harvard Uni @Dynamic Web Application semester classes. here are few thing I strive to do more and better.</p>
+							<p>Currently based in Croatia, started learning programming in PHP as a summer student at Harvard CS @Dynamic Web Application semester classes. here are few thing I strive for.</p>
 								<ul class="feature-icons">
 									<li class="fa-code">Write the code</li>
 									<li class="fa-book">Read Apple Design GL</li>
-									<li class="fa-coffee">Drink coffee and blog</li>
+									<li class="fa-coffee">Drink coffee and bot tweet</li>
 									<li class="fa-users">Beginner Unity C#</li>
-									<li class="fa-cubes">OSS rewriting and contribution</li>
-									<li class="fa-bolt">Hackathons</li>
+									<li class="fa-cubes">OSS rewriting and complaining</li>
+									<li class="fa-bolt">Hackathons with friends</li>
 								</ul>
 							</div>
 						</section>
@@ -222,12 +222,17 @@
 									</header>
 									<hr />
 
-									<h5>My favorite piece of Swift code: -determine if an array contains a condition matching element.</h5>
-									<pre><code>let fruits = ["Banana", "Apple", "Kiwi"]
-let containsBanana = fruits.contains(where: { (fruit) in
-    return fruit == "Banana"
-}) // Returns true
-}
+									<h5>My favorite piece of Swift code: -determine if an swiftUI promitive contains a condition matching element.</h5>
+									<pre><code>    var body: some View {
+       							 List {
+           							 FilterView(showFavorited: $showFavorited)
+
+           								 ForEach(products) { product in
+              							  if !self.showFavorited || product.isFavorited {
+                   								 Text(product.title)
+              						  }
+           					 }
+       				 }
 
 					</code></pre>
 					</div>
@@ -238,7 +243,7 @@ let containsBanana = fruits.contains(where: { (fruit) in
 						<section id="five">
 							<div class="container">
 								<h3>Want more?</h3>
-								<p>Contact or forward to a friend who is in need, and CC Marina (huber.marina@gmail.com).</p>
+								<p>Contact or forward to a friend who is in need designbohemia@icloud.com.</p>
 								<form method="post" action="#">
 									<div class="row uniform">
 										<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
