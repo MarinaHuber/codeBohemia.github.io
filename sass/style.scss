@@ -191,13 +191,13 @@ $size-header: 20em;
 		&.major {
 			h2 {
 				color: $color-accent-bg;
-				font-size: 3.5em;
+				font-size: 3em;
 
 				& + p {
 					color: $color-fg-bold;
-					font-size: 1.75em;
+					font-size: 1.5em;
 					font-weight: $font-weight-bold;
-					margin-top: -0.75em;
+					margin-top: -0.5em;
 				}
 			}
 		}
