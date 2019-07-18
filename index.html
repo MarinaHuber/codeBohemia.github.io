@@ -222,18 +222,19 @@
 									</header>
 									<hr />
 
-									<h5>My favorite piece of Swift code: -determine if an swiftUI promitive contains a condition matching element.</h5>
+									<h5>My favorite piece of Swift code: the first line of script’s .swift file should be a “shebang”, which points to the swift executable and we do not have to compile the code in case of small test program</h5>
 									<pre><code>    
-    var body: some View {
-        List {
-            FilterView(showFavorited: $showFavorited)
+#!/usr/bin/swift
 
-            ForEach(products) { product in
-                if !self.showFavorited || product.isFavorited {
-                    Text(product.title)
-                }
-            }
-        }
+func fibonacci(_ n: Int) -> Int {
+    if n <= 2 {
+        return 1
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    }
+}
+
+print(fibonacci(10))
 
 					</code></pre>
 					</div>
