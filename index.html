@@ -226,12 +226,14 @@
 									<pre><code>    
 #!/usr/bin/swift
 
-func fibonacci(_ n: Int) -> Int {
-    if n <= 2 {
-        return 1
+var fibMemo: [UInt: UInt] = [0: 0, 1: 1]   // our old base cases
+func fibonacci(n: UInt) -> UInt {
+    if let result = fibMemo[n] {   // our new base case
+        return result
     } else {
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        fibMemo[n] = fib3(n: n - 1) + fib3(n: n - 2)   // memoization
     }
+    return fibMemo[n]!
 }
 
 print(fibonacci(10))
