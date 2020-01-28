@@ -11,12 +11,12 @@
 /* Basic */
 
 	body {
-	 background: #fff;
+	 background: #000;
 
 	}
 
 	body, input, select, textarea {
-		color: #888;
+		color: #fff;
 		font-family: 'Quicksand', sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
