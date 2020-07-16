@@ -4,6 +4,9 @@
 			stroke: rgba(255,255,255,0.45);
 			stroke-width: 0.5px;
 		}
+		polygon.first {
+			fill: rgba(255,255,255,0.305);
+		}
 		
 		polygon.one {
 			fill: rgba(255,255,255,0.225);
@@ -16,12 +19,19 @@
 		polygon.three {
 			fill: rgba(255,255,255,0.075);
 		}
+		polygon.four {
+			fill: rgba(255,255,255,0.030);
+		}
 		
     ]]></style>
+    <polygon class="first" points="-650,0 250,1000 0,1000 0,0" />
 	<polygon class="one" points="-350,0 650,1000 0,1000 0,0" />
 	<polygon class="two" points="0,0 1000,1000 0,1000 0,0" />
 	<polygon class="three" points="350,0 1350,1000 0,1000 0,0" />
+	<polygon class="four" points="650,0 1650,1000 0,1000 0,0" />
+	<line x1="-650" y1="0" x2="250" y2="1000" />
 	<line x1="-350" y1="0" x2="650" y2="1000" />
 	<line x1="0" y1="0" x2="1000" y2="1000" />
 	<line x1="350" y1="0" x2="1350" y2="1000" />
+	<line x1="650" y1="0" x2="1650" y2="1000" />
 </svg>
