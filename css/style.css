@@ -84,6 +84,8 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
+		display: flex;
+  		flex-direction: column; 
 	}
 
 /* BG */
@@ -159,6 +161,7 @@
 		text-align: center;
 		top: 30;
 		width: 100%;
+		overflow-x: scroll;
 	}
 
 		#main:before {
@@ -258,7 +261,7 @@
 			font-size: 4.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
-			line-height: 1em;
+			line-height: 1.7em;
 		}
 		#header h2 {
 			font-size: 1.1em;
@@ -444,12 +447,12 @@
 		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		bottom: 10;
+		bottom: 0;
 		cursor: default;
-		height: 6em;
+		height: 5em;
 		left: 0;
 		line-height: 8em;
-		position: absolute;
+		position: fixed;
 		text-align: center;
 		width: 100%;
 	}
