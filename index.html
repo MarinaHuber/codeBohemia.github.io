@@ -7,10 +7,11 @@
 		<meta name="description" content="Test, build and ship apps from concept to App Store. Always looking for a next great remote team strategy and communication style. Strong eye for detail and animations." />
 		<meta name="keywords" content="Swift, digital, remote, developer, engeneering, apps, designer, animations, SwiftUI" />
 		<meta name="author" content="Marina Huber" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" /> -->
-		<meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width, maximum-scale=1, user-scalable=no"></meta>
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"></meta>
  		<meta name="apple-mobile-web-app-capable" content="yes"></meta>
+		 <meta name="mobile-web-app-capable" content="yes">
   		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
+		<meta name="theme-color" content="#0096c7">
 
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon-32x32.png">
    solution for NOTCH: https://gist.github.com/valnub/aebdb788895f8c581d9971b6aed994af  -->
@@ -25,6 +26,14 @@
 		</noscript>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script>
+			if (document.webkitFullscreenElement) {
+			  document.webkitCancelFullScreen();
+			} else {
+			  const el = document.documentElement;
+			  el.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+			}
+		</script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
