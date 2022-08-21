@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("all.min.css");
 
-/* Basic solution for NOTCH: https://gist.github.com/valnub/aebdb788895f8c581d9971b6aed994af */
+/* Basic */
 
 	body, input, select, textarea {
 		color: white;
