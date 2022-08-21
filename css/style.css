@@ -16,7 +16,7 @@
 		letter-spacing: -0.025em;
 		line-height: 1.75em;
 		width: 100%;
-		height: calc(100% + 193px);
+		/* height: calc(100% + 193px); */
 	}
     html {
       background-color: #0096c7;
