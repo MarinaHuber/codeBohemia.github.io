@@ -176,9 +176,9 @@
 		top: 0;
 		bottom: 0;
 		width: 100%;
-		/* overflow-x: scroll;
-		scroll-behavior: smooth; */
-		overscroll-behavior-y: contain;
+		overflow-y: auto:
+		/* scroll-behavior: smooth; */
+		overscroll-behavior-y: auto;
 	}
 
 		#main:before {
