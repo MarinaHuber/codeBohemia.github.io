@@ -20,6 +20,7 @@
 	}
     html {
       background-color: #0096c7;
+	  overscroll-behavior: none;
     }
 
 	body {
@@ -175,8 +176,9 @@
 		top: 0;
 		bottom: 0;
 		width: 100%;
-		overflow-x: scroll;
-		scroll-behavior: smooth;
+		/* overflow-x: scroll;
+		scroll-behavior: smooth; */
+		overscroll-behavior-y: contain;
 	}
 
 		#main:before {
