@@ -162,7 +162,8 @@
 		left: 0;
 		position: fixed;
 		text-align: center;
-		top: 30;
+		top: 0;
+		bottom: 0;
 		width: 100%;
 		overflow-x: scroll;
 	}
@@ -258,6 +259,8 @@
 		top: -1em;
 		vertical-align: middle;
 		width: 90%;
+		margin-bottom: 25px;
+		margin-top: 25px;
 	}
 
 		#header h1 {
@@ -450,7 +453,7 @@
 		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		bottom: 0;
+		bottom: 0px;
 		cursor: default;
 		height: 5em;
 		left: 0;
