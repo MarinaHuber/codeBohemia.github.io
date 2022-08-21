@@ -66,9 +66,9 @@
 			text-transform: none !important;
 		}
 
-		.icon > .label {
-			/*display: none;*/
-		}
+		/*.icon > .label {
+			/*display: none;
+		} */
 
 /* Wrapper */
 	@-moz-keyframes wrapper { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -91,6 +91,7 @@
 		width: 100%;
 		display: flex;
   		flex-direction: column;
+		padding-top: env(safe-area-inset-top); 
 		padding-left: env(safe-area-inset-left);
 		padding-right: env(safe-area-inset-right);
 		padding-bottom: env(safe-area-inset-bottom); 
