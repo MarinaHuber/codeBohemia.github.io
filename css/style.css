@@ -176,6 +176,7 @@
 		bottom: 0;
 		width: 100%;
 		overflow-x: scroll;
+		scroll-behavior: smooth;
 	}
 
 		#main:before {
