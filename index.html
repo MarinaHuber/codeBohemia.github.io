@@ -27,12 +27,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 
-		<script>
-		window.onload = function() {
-			document.body.style.height = window.innerHeight + "px";
-		}
-		window.onload(); // called to initially set the height
-		</script>
+
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -85,4 +80,15 @@
 			</div>
 		</div>
 	</body>
+
+	<script>
+		function resetHeight(){
+    // reset the body height to that of the inner browser
+        document.body.style.height = window.innerHeight + "px";
+       }
+   // reset the height whenever the window's resized
+        window.addEventListener("resize", resetHeight);
+   // called to initially set the height.
+        resetHeight();
+	</script>
 </html>
