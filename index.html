@@ -27,6 +27,28 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 
+		<style>
+			@media screen and (max-width:375px) {
+				#wrapper {
+				margin-top: env(safe-area-inset-top);
+                margin-left: env(safe-area-inset-left);
+                margin-bottom: env(safe-area-inset-bottom);
+                margin-right: env(safe-area-inset-right);
+				}
+			}
+	   </style>
+
+		<script>
+			function resetHeight(){
+		// reset the body height to that of the inner browser
+			document.body.style.height = window.innerHeight + "px";
+		   }
+	   // reset the height whenever the window's resized
+			window.addEventListener("resize", resetHeight);
+	   // called to initially set the height.
+			resetHeight();
+		</script>
+
 
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -81,14 +103,4 @@
 		</div>
 	</body>
 
-	<script>
-		function resetHeight(){
-    // reset the body height to that of the inner browser
-        document.body.style.height = window.innerHeight + "px";
-       }
-   // reset the height whenever the window's resized
-        window.addEventListener("resize", resetHeight);
-   // called to initially set the height.
-        resetHeight();
-	</script>
 </html>
