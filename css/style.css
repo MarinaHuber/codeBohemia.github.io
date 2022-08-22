@@ -101,10 +101,10 @@
 
 	}
 
-	#wrapper:-webkit-full-screen {
+	/* #wrapper:-webkit-full-screen {
         width: 100vw;
         height: 100vh;
-      }
+      }  */
 
 /* BG */
 
@@ -128,7 +128,7 @@
 		background: #348cb2 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		left: 0;
-		height: 100vh;
+		height: 100%;
 		opacity: 1;
 		position: fixed;
 		top: 0;
