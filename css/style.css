@@ -24,7 +24,7 @@
     }
 
 	body {
-		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+		background: #348cb2;
 
 	}
 
@@ -215,11 +215,12 @@
    .related > a {
 	border: 1px solid #fff;
 	display: inline-block;
+	background-color: rgba(0,139,139, .2);
 	text-align: left;
 	margin: 10px 20px;
 	padding: 20px;
 	color: #fff;
-	opacity: 0.8;
+	opacity: 1.0;
 	-webkit-transition: color 0.3s, border-color 0.3s;
 	transition: color 0.3s, border-color 0.3s;
 	-webkit-backface-visibility: hidden;
@@ -229,9 +230,9 @@
 	border-color: #fff;
 	color: #fff;
 }
-
+ƒoverl
 .related a img {
-	max-width: 100%;
+	max-width: 50%;
 }
 
 .related a h3 {
@@ -274,7 +275,7 @@
 		-webkit-transform: translate3d(0,0,0);
 		-o-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+	    transform: translate3d(0,0,0); 
 		cursor: default;
 		display: inline-block;
 		opacity: 0;
