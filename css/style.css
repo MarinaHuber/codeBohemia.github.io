@@ -127,18 +127,16 @@
 		/* Set your background with this */
 		background: #348cb2 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
-		left: 0;
 		height: 100%;
 		opacity: 1;
 		position: fixed;
-		top: 0;
-	/*	margin-top: env(safe-area-inset-top);
+		margin-top: env(safe-area-inset-top);
 		margin-left: env(safe-area-inset-left);
 		margin-bottom: env(safe-area-inset-bottom);
-        margin-right: env(safe-area-inset-right); */
-	}
-	/*	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-		min-height: calc(100% + env(safe-area-inset-top)); */
+        margin-right: env(safe-area-inset-right); 
+		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+		min-height: calc(100% + env(safe-area-inset-top));
+}
 
 	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
 	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-2250px,0,0); -webkit-transform: translate3d(-2250px,0,0); -o-transform: translate3d(-2250px,0,0); -ms-transform: translate3d(-2250px,0,0); transform: translate3d(-2250px,0,0); } }
