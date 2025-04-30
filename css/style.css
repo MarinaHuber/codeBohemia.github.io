@@ -213,7 +213,7 @@
    .related > a {
 	border: 1px solid #fff;
 	display: inline-block;
-	background-color: rgba(0,139,139, .2);
+	background-color: rgba(144,152,160, .2);
 	text-align: left;
 	margin: 10px 20px;
 	padding: 20px;
@@ -228,9 +228,9 @@
 	border-color: #fff;
 	color: #fff;
 }
-ƒoverl
+
 .related a img {
-	max-width: 50%;
+	max-width: 35%;
 }
 
 .related a h3 {
@@ -240,7 +240,15 @@
 	text-align: left;
 	font-size: 150%;
 	font-weight: 800;
-}		
+}	
+.hover-arrow {
+	cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><rect x="5" y="5" width="40" height="40" rx="8" ry="8" fill="%23FF69B4"/><animate attributeName="fill" values="%23FF69B4;%23FF1493;%23FF69B4" dur="1s" repeatCount="indefinite"/></svg>') 25 25, auto;
+	transition: all 0.3s ease;
+  }
+  
+  .hover-arrow:hover {
+	transform: translateY(-3px);
+  }
 	
 
 /* Header */
@@ -279,24 +287,67 @@
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -1em;
-		vertical-align: middle;
+		top: 0;
+		vertical-align: top;
 		width: 90%;
 		margin-bottom: 25px;
 		margin-top: 25px;
 	}
 
-		#header h1 {
-			font-size: 4.35em;
-			font-weight: 900;
-			letter-spacing: -0.035em;
-			line-height: 1.7em;
+	#header h1 {
+		position: relative;
+		margin: 0 auto; /* Center horizontally */
+		font-size: 4.35em;
+		font-weight: 900;
+		letter-spacing: -0.035em;
+		line-height: 1.7em;
+		color: transparent;
+		text-align: center;
+		display: inline-block; /* Make it only as wide as needed */
+	}
+	
+	#header h1:before {
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0; /* Start with 0 width */
+		height: 90%;
+		color: #FFF;
+		overflow: hidden;
+		border-right: 1px solid #FFF;
+		animation: type 6s steps(20) infinite;
+		white-space: nowrap;
+	}
+		
+		@keyframes type {
+			0% {
+				width: 0%;
+			}
+			50% {
+				width: 100%;
+			}
+			90% {
+				width: 100%;
+			}
+			100% {
+				width: 0%;
+			}
 		}
+
 		#header h2 {
 			font-size: 1.1em;
 			font-weight: 300;
 			letter-spacing: -0.005em;
 			line-height: 1em;
+		}
+
+		#header p.highlight {
+			font-size: 1.75em; /* Larger than your standard paragraph */
+			opacity: 1; /* Fully opaque */
+			margin: 1em 0 0.5em 0; /* Custom margins */
+			letter-spacing: 0.02em; /* Custom letter spacing */
+			line-height: 1.4em; /* Custom line height */
 		}
 
 		#header p {
