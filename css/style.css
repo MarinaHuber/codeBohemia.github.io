@@ -297,6 +297,19 @@
     i {
     	font-size: 50px;
     }
+	#sampleMovie {
+		width: 40%; /* Make the video take the full width of its container */
+		height: auto; /* Maintain the aspect ratio */
+		border-radius: 10px; /* Adjust the value for more or less rounding */
+		overflow: hidden; /* Ensure no overflow if needed */
+		padding: 30px;
+	}
+	.disabled-link {
+		pointer-events: none; /* Disable click events */
+		color: gray; /* Change color to indicate it's disabled */
+		text-decoration: none; /* Remove underline */
+		opacity: 0.5; /* Make it look visually disabled */
+	}
 	#header {
 		-moz-animation: header 1s 2.25s forwards;
 		-webkit-animation: header 1s 2.25s forwards;
@@ -366,6 +379,13 @@
 				width: 0%;
 			}
 		}
+		.text {
+			width: 550px; /* Fixed width */
+			height: 450px; /* Fixed height */
+			overflow: hidden; /* Hide overflow if content exceeds height */
+			display: inline-block; /* Ensure the anchor behaves like a block element */
+			text-align: left; /* Align text to the left */
+		}
 
 		#header h2 {
 			font-size: 1.1em;
@@ -375,15 +395,15 @@
 		}
 
 		#header p.highlight {
-			font-size: 1.75em; /* Larger than your standard paragraph */
+			font-size: 1.5em; /* Larger than your standard paragraph */
 			opacity: 1; /* Fully opaque */
-			margin: 0 0 1em 0; /* Custom margins */
+			margin: 0 0 0em 0; /* Custom margins */
 			letter-spacing: 0.02em; /* Custom letter spacing */
 			line-height: 1.4em; /* Custom line height */
 		}
 
 		#header p {
-			font-size: 1.25em;
+			font-size: 1.15em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
@@ -549,13 +569,6 @@
 
 				#header nav a span {
 					display: none;
-				}
-
-				#sampleMovie {
-					width: 60%; /* Make the video take the full width of its container */
-					height: auto; /* Maintain the aspect ratio */
-					border-radius: 10px; /* Adjust the value for more or less rounding */
-					overflow: hidden; /* Ensure no overflow if needed */
 				}
 
 /* Footer */
