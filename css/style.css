@@ -79,11 +79,11 @@
 	@keyframes wrapper { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 	#wrapper {
-		-moz-animation: wrapper 3s forwards;
-		-webkit-animation: wrapper 3s forwards;
-		-o-animation: wrapper 3s forwards;
-		-ms-animation: wrapper 3s forwards;
-		animation: wrapper 3s forwards;
+		-moz-animation: wrapper 2s forwards;
+		-webkit-animation: wrapper 2s forwards;
+		-o-animation: wrapper 2s forwards;
+		-ms-animation: wrapper 2s forwards;
+		animation: wrapper 2s forwards;
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -109,11 +109,11 @@
 /* BG */
 
 	#bg {
-		-moz-animation: bg 60s linear infinite;
-		-webkit-animation: bg 60s linear infinite;
-		-o-animation: bg 60s linear infinite;
-		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
+		-moz-animation: bg 40s linear infinite;
+		-webkit-animation: bg 40s linear infinite;
+		-o-animation: bg 40s linear infinite;
+		-ms-animation: bg 40s linear infinite;
+		animation: bg 40s linear infinite;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-o-backface-visibility: hidden;
@@ -157,11 +157,11 @@
 	@keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 	#overlay {
-		-moz-animation: overlay 1.5s 1.5s forwards;
-		-webkit-animation: overlay 1.5s 1.5s forwards;
-		-o-animation: overlay 1.5s 1.5s forwards;
-		-ms-animation: overlay 1.5s 1.5s forwards;
-		animation: overlay 1.5s 1.5s forwards;
+		-moz-animation: overlay 0.5s 0.5s forwards;
+		-webkit-animation: overlay 0.5s 0.5s forwards;
+		-o-animation: overlay 0.5s 0.5s forwards;
+		-ms-animation: overlay 0.5s 0.5s forwards;
+		animation: overlay 0.5s 0.5s forwards;
 		background-attachment: fixed, fixed;
 		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
 		background-position: top left, center center;
@@ -297,13 +297,24 @@
     i {
     	font-size: 50px;
     }
+/* Make the video responsive */
 	#sampleMovie {
-		width: 40%; /* Make the video take the full width of its container */
+		width: 100%; /* Make the video take up the full width of its container */
+		max-width: 800px; /* Optional: Limit the maximum width for larger screens */
 		height: auto; /* Maintain the aspect ratio */
-		border-radius: 10px; /* Adjust the value for more or less rounding */
-		overflow: hidden; /* Ensure no overflow if needed */
-		padding: 30px;
+		border-radius: 10px; /* Optional: Add rounded corners */
+		display: block; /* Ensure the video behaves like a block element */
+		margin: 0 auto; /* Center the video horizontally */
+		padding: 0; /* Remove any unnecessary padding */
 	}
+	
+	/* Optional: Add a minimum width for very small screens */
+	@media (max-width: 480px) {
+		#sampleMovie {
+		min-width: 300px; /* Ensure the video doesn't get too small */
+		}
+	}
+  
 	.disabled-link {
 		pointer-events: none; /* Disable click events */
 		color: gray; /* Change color to indicate it's disabled */
@@ -361,7 +372,7 @@
 		color: #FFF;
 		overflow: hidden;
 		border-right: 1px solid #FFF;
-		animation: type 6s steps(20) infinite;
+		animation: type 4s steps(20) infinite;
 		white-space: nowrap;
 	}
 		
@@ -380,12 +391,18 @@
 			}
 		}
 		.text {
-			width: 550px; /* Fixed width */
-			height: 450px; /* Fixed height */
-			overflow: hidden; /* Hide overflow if content exceeds height */
-			display: inline-block; /* Ensure the anchor behaves like a block element */
+			width: 100%; /* Make the element take full width of its parent */
+			max-width: 600px; /* Optional: Limit width on larger screens */
+			padding: 20px; /* Add some padding */
+			margin: 20px auto; /* Center the block */
+			box-sizing: border-box; /* Include padding in element's width/height */
+			display: block; /* Ensure it's a block element */
 			text-align: left; /* Align text to the left */
-		}
+			background-color: #f9f9f9; /* Add a light background for better readability */
+			border-radius: 8px; /* Add rounded corners */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+			overflow: visible; /* Let content expand naturally */
+		  }
 
 		#header h2 {
 			font-size: 1.1em;
@@ -395,11 +412,9 @@
 		}
 
 		#header p.highlight {
-			font-size: 1.5em; /* Larger than your standard paragraph */
-			opacity: 1; /* Fully opaque */
-			margin: 0 0 0em 0; /* Custom margins */
-			letter-spacing: 0.02em; /* Custom letter spacing */
-			line-height: 1.4em; /* Custom line height */
+			font-size: 1.5em;
+			letter-spacing: 0.02em; 
+			line-height: 1.4em; 
 		}
 
 		#header p {
@@ -412,12 +427,13 @@
 			margin: 0 0 0 0;
 		}
 
+
 			#header nav li {
-				-moz-animation: nav-icons 0.5s ease-in-out forwards;
-				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
-				-o-animation: nav-icons 0.5s ease-in-out forwards;
-				-ms-animation: nav-icons 0.5s ease-in-out forwards;
-				animation: nav-icons 0.5s ease-in-out forwards;
+				-moz-animation: nav-icons 0.3s ease-in-out forwards;
+				-webkit-animation: nav-icons 0.3s ease-in-out forwards;
+				-o-animation: nav-icons 0.3s ease-in-out forwards;
+				-ms-animation: nav-icons 0.3s ease-in-out forwards;
+				animation: nav-icons 0.3s ease-in-out forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-o-backface-visibility: hidden;
@@ -531,11 +547,11 @@
 			}
 
 				#header nav a:before {
-					-moz-transition: all 0.2s ease-in-out;
-					-webkit-transition: all 0.2s ease-in-out;
-					-o-transition: all 0.2s ease-in-out;
-					-ms-transition: all 0.2s ease-in-out;
-					transition: all 0.2s ease-in-out;
+					-moz-transition: all 0s ease-in-out;
+					-webkit-transition: all 0s ease-in-out;
+					-o-transition: all 0s ease-in-out;
+					-ms-transition: all 0s ease-in-out;
+					transition: all 0s ease-in-out;
 					border-radius: 100%;
 					border: solid 1px white;
 					display: block;
@@ -570,6 +586,28 @@
 				#header nav a span {
 					display: none;
 				}
+			/* Responsive Design */
+		@media (max-width: 768px) { /* Tablet and smaller screens */
+		.text {
+			width: 90%; /* Reduce width to fit smaller screens */
+			font-size: 16px; /* Adjust font size for readability */
+		}
+
+		#header p.highlight {
+			font-size: 1.3em; /* Slightly smaller font size for tablets */
+		}
+		}
+
+		@media (max-width: 480px) { /* Mobile screens */
+		.text {
+			font-size: 14px; /* Further reduce the font size for mobile */
+			padding: 15px; /* Adjust padding for smaller screens */
+		}
+
+		#header p.highlight {
+			font-size: 1.2em; /* Smaller font size for mobile */
+		}
+		}		
 
 /* Footer */
 
